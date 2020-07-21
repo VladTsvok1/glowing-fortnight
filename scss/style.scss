@@ -15,3 +15,49 @@
 
 //======= mixns =======
 
+.section-outer{
+
+}
+.section-inner{
+
+}
+
+.section-header{
+    &-logo{}
+    &-search{
+        &-input{}
+        &-button{}
+    }
+    &-menu{
+        &_language{}
+        &_log-in{}
+        &_list{}
+    }
+}
+.section-small-nav{
+
+}
+.section-promo{
+
+}
+.section-aboutp{
+
+}
+.section-jobs{
+
+}
+.section-services{
+
+}
+.section-doctors {
+
+}
+.section-reviews{
+
+}
+.section-news{
+
+}
+.section-footer {
+
+}
