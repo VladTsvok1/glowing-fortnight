@@ -15,7 +15,16 @@
 
 //======= mixns =======
 
-
+@mixin custom-green-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #32D29F;
+    border: none;
+    border-radius: 2px ;
+    cursor: pointer;
+ 
+ }
 
 
 
@@ -28,34 +37,113 @@ $maxWidthContainer: 1410px;
 body{
     font-family: 'AvenirNextCyr', sans-serif;
 }
-.section-inner{
-    width: $maxWidthContainer;
-    display: flex;
-    justify-content: space-between;
-}
 
 .section-header{
-    
+    border-bottom: 1px solid #C0D3FE;
     &-logo{
+        margin-top: 15px;
         width: 155px;
         height: 50px;
-        background: url("../img/Logo_color\ 1logo.png") no-repeat;
+        background: url("../img/images/Logo_color\ 1logo.png") no-repeat;
         background-size: cover;
     }
     &-search{
+        margin-top: 14px;
         display: flex;
-        &-input{}
-        &-button{}
+        justify-content: space-between;
+        width: 389px;
+        height: 50px;
+        border: 1px solid #D2E1F5;
+        box-sizing: border-box;
+        border-radius: 4px;
+        &-input{
+           
+            input{
+                font-size: 16px;
+                margin: 14px 0 15px 16px; 
+                border: none;
+               
+            }
+            ::placeholder{ color: #A7C0E2;}
+        }
+        
+        &-button{
+            button{
+                width: 98px;
+                height: 36px;
+                margin: 7px 9px 7px 0; 
+                @include custom-green-button;
+                
+            }
+        
+        }
     }
     &-menu{
+        margin-top: 22px;
         display: flex;
-        &_language{}
-        &_log-in{}
-        &_list{}
+        justify-content: space-between;
+        width: 308px;
+        &_language{
+            padding-top: 5px;
+            span{
+                font-size: 16px;
+                line-height: 20px;
+                background: url(../img/icons/Vectortriangle-icon.svg) no-repeat;
+                background-size: auto;
+                background-position-x: right;
+                background-position-y: center;
+                width: 51px;
+                display: block;
+            }
+        }
+        &_log-in{
+            button{
+                width: 100px;
+                height: 36px;
+                
+                @include custom-green-button;
+            }
+            &-icon{
+                background:url("../img/icons/Vectorlock-login-icon.svg") no-repeat;
+                width:11px; 
+                height:16px; 
+                padding: 0 9px  0 0;
+                display:inline-block;
+                vertical-align:bottom;
+            }
+            
+        }
+        
+        &_list{
+            padding-top: 5px;
+            span{
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 450;
+                display: block;
+                width: 75px;
+                background: url(../img/icons/Vectormenu-burger.svg) no-repeat;
+                background-size: auto;
+                background-position-x: right;
+                background-position-y: center;
+            }
+           
+        }
     }
+    .section-inner{
+        height: 81px;
+        width: $maxWidth;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
 }
 .section-small-nav{
-
+    .section-inner{
+        height: 81px;
+        width: $maxWidth;
 }
 .section-promo{
 

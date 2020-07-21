@@ -313,19 +313,88 @@ template {
 body {
   font-family: 'AvenirNextCyr', sans-serif; }
 
-.section-inner {
-  width: 1410px;
-  display: flex;
-  justify-content: space-between; }
-
-.section-header-logo {
-  width: 155px;
-  height: 50px;
-  background: url("../img/Logo_color 1logo.png") no-repeat;
-  background-size: cover; }
-
-.section-header-search {
-  display: flex; }
-
-.section-header-menu {
-  display: flex; }
+.section-header {
+  border-bottom: 1px solid #C0D3FE; }
+  .section-header-logo {
+    margin-top: 15px;
+    width: 155px;
+    height: 50px;
+    background: url("../img/images/Logo_color 1logo.png") no-repeat;
+    background-size: cover; }
+  .section-header-search {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 389px;
+    height: 50px;
+    border: 1px solid #D2E1F5;
+    box-sizing: border-box;
+    border-radius: 4px; }
+    .section-header-search-input input {
+      font-size: 16px;
+      margin: 14px 0 15px 16px;
+      border: none; }
+    .section-header-search-input ::placeholder {
+      color: #A7C0E2; }
+    .section-header-search-button button {
+      width: 98px;
+      height: 36px;
+      margin: 7px 9px 7px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      background-color: #32D29F;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer; }
+  .section-header-menu {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 308px; }
+    .section-header-menu_language {
+      padding-top: 5px; }
+      .section-header-menu_language span {
+        font-size: 16px;
+        line-height: 20px;
+        background: url(../img/icons/Vectortriangle-icon.svg) no-repeat;
+        background-size: auto;
+        background-position-x: right;
+        background-position-y: center;
+        width: 51px;
+        display: block; }
+    .section-header-menu_log-in button {
+      width: 100px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      background-color: #32D29F;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer; }
+    .section-header-menu_log-in-icon {
+      background: url("../img/icons/Vectorlock-login-icon.svg") no-repeat;
+      width: 11px;
+      height: 16px;
+      padding: 0 9px  0 0;
+      display: inline-block;
+      vertical-align: bottom; }
+    .section-header-menu_list {
+      padding-top: 5px; }
+      .section-header-menu_list span {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 450;
+        display: block;
+        width: 75px;
+        background: url(../img/icons/Vectormenu-burger.svg) no-repeat;
+        background-size: auto;
+        background-position-x: right;
+        background-position-y: center; }
+  .section-header .section-inner {
+    height: 81px;
+    width: 1660px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
