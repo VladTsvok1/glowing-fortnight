@@ -1,3 +1,8 @@
+@import 'normalize.scss';
+
+
+//fonts
+
 @font-face {
 	font-family: 'AvenirNextCyr';
 	src: url('../fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
@@ -7,3 +12,6 @@
 		url('../fonts/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+
+//======= mixns =======
+
