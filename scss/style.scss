@@ -15,20 +15,40 @@
 
 //======= mixns =======
 
-.section-outer{
 
+
+
+
+// ====== variables ======
+$maxWidth: 1660px;
+$maxWidthContainer: 1410px;
+
+
+
+body{
+    font-family: 'AvenirNextCyr', sans-serif;
 }
 .section-inner{
-
+    width: $maxWidthContainer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-header{
-    &-logo{}
+    
+    &-logo{
+        width: 155px;
+        height: 50px;
+        background: url("../img/Logo_color\ 1logo.png") no-repeat;
+        background-size: cover;
+    }
     &-search{
+        display: flex;
         &-input{}
         &-button{}
     }
     &-menu{
+        display: flex;
         &_language{}
         &_log-in{}
         &_list{}

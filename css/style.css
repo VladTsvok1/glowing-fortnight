@@ -309,3 +309,23 @@ template {
   /* IE 9 Compatibility Mode */
   src: url("../fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff"), url("../fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg");
   /* Chrome < 4, Legacy iOS */ }
+
+body {
+  font-family: 'AvenirNextCyr', sans-serif; }
+
+.section-inner {
+  width: 1410px;
+  display: flex;
+  justify-content: space-between; }
+
+.section-header-logo {
+  width: 155px;
+  height: 50px;
+  background: url("../img/Logo_color 1logo.png") no-repeat;
+  background-size: cover; }
+
+.section-header-search {
+  display: flex; }
+
+.section-header-menu {
+  display: flex; }
