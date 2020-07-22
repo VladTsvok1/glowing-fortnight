@@ -143,8 +143,62 @@ body{
 .section-small-nav{
     .section-inner{
         height: 81px;
-        width: $maxWidth;
-}
+        width: $maxWidthContainer;
+        margin: auto;
+        
+        &-list{
+           
+            list-style: none;
+           &-item{
+            display: inline-block;
+            padding: 0 15px 0 0;
+            background: url(../img/icons/Vectorlist-arrow.svg) no-repeat;
+            background-size: 13px 6px;
+            background-position-x: right;
+            background-position-y: center;
+            
+            &:last-child{
+                background: none;
+                padding: 0;
+            }
+            
+           
+            a{
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: #16395B;
+                &:active{
+                    text-decoration: underline;
+                    
+                }
+
+
+
+            }
+            }
+           }
+        }
+    }
+    
+
+    @media (max-width: 1200px){
+        .section-inner{
+            max-width: 970px;
+        }
+    }
+    @media (max-width: 992px){
+        .section-inner{
+            max-width: 750px;
+        }
+    }
+    @media (max-width: 767px){
+        .section-inner{
+            max-width: none;
+        }
+    }
+
 .section-promo{
 
 }

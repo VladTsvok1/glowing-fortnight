@@ -398,3 +398,28 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
+
+.section-small-nav .section-inner {
+  height: 81px;
+  width: 1410px;
+  margin: auto; }
+  .section-small-nav .section-inner-list {
+    list-style: none; }
+    .section-small-nav .section-inner-list-item {
+      display: inline-block;
+      padding: 0 15px 0 0;
+      background: url(../img/icons/Vectorlist-arrow.svg) no-repeat;
+      background-size: 13px 6px;
+      background-position-x: right;
+      background-position-y: center; }
+      .section-small-nav .section-inner-list-item:last-child {
+        background: none;
+        padding: 0; }
+      .section-small-nav .section-inner-list-item a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #16395B; }
+        .section-small-nav .section-inner-list-item a:active {
+          text-decoration: underline; }
