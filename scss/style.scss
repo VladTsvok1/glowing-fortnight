@@ -23,6 +23,9 @@
     border: none;
     border-radius: 2px ;
     cursor: pointer;
+    &:hover{
+        background: rgba(30, 206, 86, 0.7);
+    }
  
  }
 
@@ -112,8 +115,9 @@ body{
             button{
                 width: 100px;
                 height: 36px;
-                
+               
                 @include custom-green-button;
+               
             }
             &-icon{
                 background:url("../img/icons/Vectorlock-login-icon.svg") no-repeat;
@@ -151,8 +155,10 @@ body{
     
 }
 .section-small-nav{
+    padding-top: 15px;;
     .section-inner{
-        height: 81px;
+       
+        height: 50px;
         width: $maxWidthContainer;
         margin: auto;
         .section-nav{
@@ -206,6 +212,8 @@ body{
         flex-direction: row;
     }
     &-info{
+        box-sizing: border-box;
+        padding: 66px 0 0 91px;
         width: 721px;
         height: 600px;
         background: linear-gradient(135.38deg, #2BBB97 45.98%, #25AEF6 91.19%);
@@ -216,12 +224,9 @@ body{
             height: 91px;
             background: url(../img/images/parents-logo-background.jpg) no-repeat;
             background-position: bottom;
-            margin-left: 91px;
-            padding-top: 66px;;
         }
         &-name{
             &-text{
-                margin-left: 91px;
                 padding-top: 16px;;
                 &-main{
                     font-style: normal;
@@ -243,7 +248,6 @@ body{
             }
         }
         &-location{
-            margin-left: 91px;
             padding-top: 42px;
             a{
                 text-decoration: none;
@@ -260,7 +264,7 @@ body{
             }
         }
         &-phone{
-            margin-left: 91px;
+
             padding-top: 23px;
             a{
                 display: block;
@@ -279,7 +283,6 @@ body{
             }
         }
         &-site{
-            margin-left: 91px;
             padding-top: 23px;
             a{
                 display: block;
@@ -302,7 +305,6 @@ body{
         }
 
         &-callme{
-            margin-left: 91px;
             padding-top: 42px;;
             button{
                 border: 2px solid #FFFFFF;
@@ -315,6 +317,9 @@ body{
                 line-height: 24px;
                 color: #FFFFFF;
                 cursor: pointer;  
+                &:hover{
+                    background: rgba(255, 255, 255, 0.4);
+                }
             }
         }
     }
@@ -380,13 +385,170 @@ body{
 }
 
 
+// ==================== about==================
 
 
+button:focus{
+outline: none;
+}
+
+.section-about{
+    margin-top: 60px;
+    .section-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-text{
+        width: 930px;
+        min-height: 404px;
+        margin-right: 40px;
+        h3{
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        a{
+            p{
+               
+                display: block;
+            }
+            padding-top: 5px;
+            display: block;
+            width: 170px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            text-decoration-line: underline;
+             color: #25AEF6;
+        }
+      
+    }
+    &-schedule{
+        width: 330px;
+        min-height: 404px;
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 22px;
+        }
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #D2E1F5;
+            &-day{
+                font-weight: 450;
+                font-size: 20px;
+                line-height: 25px;
+                color: #AFB9DD;
+                padding: 12px 0 12px 0;
+                margin: 0;
+            }
+            &-time{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                color: #3B3B3B;
+                padding: 12px 0 12px 0;
+                margin: 0;
+            }
+        }
+    }
+}
 
 
+.section-jobs{
+    margin-top: 132px;
+    &-specializes{
+        min-height: 221px;
+        width: 930px;
+        &-header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
+            h3{
+                margin: 0;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            button{
+                color: #2BBB97;
+                border: 1px solid #2BBB97;
+                border-radius: 2px;
+                background: transparent;
+                width: 135px;
+                height: 36px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                cursor: pointer;  
+                &:hover{
+                    background: #2BBB97;
+                    color: white;
+                }
+            }
+        }
 
+        &-block{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;
+            &:last-child{
+                margin-right: 52px;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    text-decoration: underline;                 
+                    color: #2BBB97;
+                    .section-jobs-specializes-block-counter{
+                        text-decoration: underline;                 
+                        color: #2BBB97;
+                    }
+                }
+            }
+            p{  
+                display: inline-block;
+                margin: 0 0 37px 0;
+                font-weight: 450;
+                font-size: 20px;
+                line-height: 25px;
+            }
 
+            &-letter{
+                color: #25AEF6;
+            }
+            &-counter{
+                color: #AFB9DD;
+            }
+
+        }
+    }
+}
+.section-services{
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 
 
@@ -394,7 +556,7 @@ body{
 
 
 // ==================media==============================
-    @media (max-width: 1410px){
+    @media (max-width: 1420px){
         .section-inner{
             max-width: 1200px;
         }
@@ -415,33 +577,19 @@ body{
         }
     }
 
-    @media (max-width: 1200px){
+    @media (max-width: 1220px){
         .section-inner{
             max-width: 970px;
         }
         .section-promo-info{
+            padding-left: 50px;
             width: 500px;
-            &-logo{
-                margin-left: 50px;
-            }
             &-name{
-                margin-left: 50px;
-                &-text{
+               &-text{
                     margin-left: 0;
                 }
             }
-            &-location{
-                margin-left: 50px;
-            }
-            &-phone{
-                margin-left: 50px;
-            }
-            &-site{
-                margin-left: 50px;
-            }
-            &-callme{
-                margin-left: 50px;
-            }
+           
         }
         .section-promo-media{
             width: 470px;
@@ -493,11 +641,13 @@ body{
         }
 
         .section-promo{
+
             .section-inner{
                 display: flex;
                 flex-direction: column;
             }
             &-info{
+                padding-left: 0;
                 width: 100%;
                 &-logo{
                     margin: auto;
@@ -522,9 +672,7 @@ body{
                         width: 250px;
                         margin-left: 250px;
                     }
-                    p{
-                       
-                    }
+
 
                 }
                 &-site{
@@ -559,7 +707,45 @@ body{
         }
 
 
+        .section-about{
+            margin-top: 60px;
+            .section-inner{
+                display: flex;
+                flex-direction: column;
+            }
+            &-text{
+                width: 100%;
+                min-height: 404px;
+                margin-bottom: 60px;
+            }
+
+        
+            &-schedule{
+                margin: auto;
+                width: 600px;
+                min-height: 404px;
+
+            }
+        }
+        .section-jobs{
+
+            &-specializes{
+                width: 650px;
+                margin: auto;
+                
+                &-block{
+                    margin-top: 50px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
+
+
+
+
     @media (max-width: 767px){
         .section-inner{
             
@@ -689,6 +875,61 @@ body{
 
       // ======== media promo =====
 
+// ======================== about =============
+
+.section-about{
+    margin-top: 60px;
+    .section-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    &-text{
+        width: 100%;
+        min-height: 404px;
+        margin-bottom: 40px;
+        h3{
+            text-align: center;
+        }
+    }
+
+
+    &-schedule{
+        margin: auto;
+        width: 400px;
+        min-height: 404px;
+        h3{
+            text-align: center;
+        }
+    }
+    }
+
+.section-jobs{
+
+    &-specializes{
+        width: 450px;
+        margin: auto;
+        
+        
+    &-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+            &-inner{
+                margin-bottom: 35px;
+                &-item{
+                    p{
+                       margin-left: 140px; 
+                    }
+                }
+            }
+        &:last-child{
+            margin-right: 52px;
+        }
+    }
+}
+}
+
 }
 @media (max-width: 565px){
     .section-inner{
@@ -712,10 +953,13 @@ body{
                 }
             }
             &-location{
+
                 margin: auto;
                 p{
                     margin-left: 40px;
-                    
+                    br{
+                        display: none;
+                    }
                 }
             }
             &-phone{
@@ -739,28 +983,6 @@ body{
         }
         
     }
-}
-.section-promo{
-
-}
-.section-aboutp{
-
-}
-.section-jobs{
-
-}
-.section-services{
-
-}
-.section-doctors {
-
-}
-.section-reviews{
-
-}
-.section-news{
-
-}
-.section-footer {
+  
 
 }

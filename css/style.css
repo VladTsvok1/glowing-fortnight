@@ -355,6 +355,8 @@ body {
       border: none;
       border-radius: 2px;
       cursor: pointer; }
+      .section-header-search-button button:hover {
+        background: rgba(30, 206, 86, 0.7); }
   .section-header-menu {
     margin-top: 22px;
     display: flex;
@@ -381,6 +383,8 @@ body {
       border: none;
       border-radius: 2px;
       cursor: pointer; }
+      .section-header-menu_log-in button:hover {
+        background: rgba(30, 206, 86, 0.7); }
     .section-header-menu_log-in-icon {
       background: url("../img/icons/Vectorlock-login-icon.svg") no-repeat;
       width: 11px;
@@ -405,39 +409,43 @@ body {
     display: flex;
     justify-content: space-between; }
 
-.section-small-nav .section-inner {
-  height: 81px;
-  width: 1410px;
-  margin: auto; }
-  .section-small-nav .section-inner .section-nav-list {
-    padding: 0;
-    list-style: none; }
-    .section-small-nav .section-inner .section-nav-list-item {
-      display: inline-block;
-      padding: 0 15px 0 0;
-      background: url(../img/icons/Vectorlist-arrow.svg) no-repeat;
-      background-size: 13px 6px;
-      background-position-x: right;
-      background-position-y: center; }
-      .section-small-nav .section-inner .section-nav-list-item a {
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 20px;
-        color: #16395B; }
-        .section-small-nav .section-inner .section-nav-list-item a:active {
-          text-decoration: underline; }
-      .section-small-nav .section-inner .section-nav-list-item:last-child {
-        background: none;
-        padding: 0; }
-        .section-small-nav .section-inner .section-nav-list-item:last-child a {
-          color: #A7C0E2; }
+.section-small-nav {
+  padding-top: 15px; }
+  .section-small-nav .section-inner {
+    height: 50px;
+    width: 1410px;
+    margin: auto; }
+    .section-small-nav .section-inner .section-nav-list {
+      padding: 0;
+      list-style: none; }
+      .section-small-nav .section-inner .section-nav-list-item {
+        display: inline-block;
+        padding: 0 15px 0 0;
+        background: url(../img/icons/Vectorlist-arrow.svg) no-repeat;
+        background-size: 13px 6px;
+        background-position-x: right;
+        background-position-y: center; }
+        .section-small-nav .section-inner .section-nav-list-item a {
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          color: #16395B; }
+          .section-small-nav .section-inner .section-nav-list-item a:active {
+            text-decoration: underline; }
+        .section-small-nav .section-inner .section-nav-list-item:last-child {
+          background: none;
+          padding: 0; }
+          .section-small-nav .section-inner .section-nav-list-item:last-child a {
+            color: #A7C0E2; }
 
 .section-promo .section-inner {
   display: flex;
   flex-direction: row; }
 
 .section-promo-info {
+  box-sizing: border-box;
+  padding: 66px 0 0 91px;
   width: 721px;
   height: 600px;
   background: linear-gradient(135.38deg, #2BBB97 45.98%, #25AEF6 91.19%);
@@ -446,11 +454,8 @@ body {
     width: 91px;
     height: 91px;
     background: url(../img/images/parents-logo-background.jpg) no-repeat;
-    background-position: bottom;
-    margin-left: 91px;
-    padding-top: 66px; }
+    background-position: bottom; }
   .section-promo-info-name-text {
-    margin-left: 91px;
     padding-top: 16px; }
     .section-promo-info-name-text-main {
       font-style: normal;
@@ -467,7 +472,6 @@ body {
       margin: 0;
       padding: 0; }
   .section-promo-info-location {
-    margin-left: 91px;
     padding-top: 42px; }
     .section-promo-info-location a {
       text-decoration: none; }
@@ -481,7 +485,6 @@ body {
       background: url(../img/icons/location-icon.svg) no-repeat;
       background-position-y: 3px; }
   .section-promo-info-phone {
-    margin-left: 91px;
     padding-top: 23px; }
     .section-promo-info-phone a {
       display: block;
@@ -496,7 +499,6 @@ body {
       color: #FFFFFF;
       background: url(../img/icons/Vectorphone-icon.svg) no-repeat; }
   .section-promo-info-site {
-    margin-left: 91px;
     padding-top: 23px; }
     .section-promo-info-site a {
       display: block;
@@ -512,7 +514,6 @@ body {
       color: #FFFFFF;
       background: url(../img/icons/Vectorweb-icon.svg) no-repeat; }
   .section-promo-info-callme {
-    margin-left: 91px;
     padding-top: 42px; }
     .section-promo-info-callme button {
       border: 2px solid #FFFFFF;
@@ -525,6 +526,8 @@ body {
       line-height: 24px;
       color: #FFFFFF;
       cursor: pointer; }
+      .section-promo-info-callme button:hover {
+        background: rgba(255, 255, 255, 0.4); }
 
 .section-promo .section-promo-info-name-text-wraper {
   display: flex; }
@@ -574,7 +577,130 @@ body {
     background-position-y: 225px;
     padding-left: 37px; }
 
-@media (max-width: 1410px) {
+button:focus {
+  outline: none; }
+
+.section-about {
+  margin-top: 60px; }
+  .section-about .section-inner {
+    display: flex;
+    justify-content: space-between; }
+  .section-about-text {
+    width: 930px;
+    min-height: 404px;
+    margin-right: 40px; }
+    .section-about-text h3 {
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px; }
+    .section-about-text p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px; }
+    .section-about-text a {
+      padding-top: 5px;
+      display: block;
+      width: 170px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      text-decoration-line: underline;
+      color: #25AEF6; }
+      .section-about-text a p {
+        display: block; }
+  .section-about-schedule {
+    width: 330px;
+    min-height: 404px; }
+    .section-about-schedule h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 22px; }
+    .section-about-schedule-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #D2E1F5; }
+      .section-about-schedule-item-day {
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 25px;
+        color: #AFB9DD;
+        padding: 12px 0 12px 0;
+        margin: 0; }
+      .section-about-schedule-item-time {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: #3B3B3B;
+        padding: 12px 0 12px 0;
+        margin: 0; }
+
+.section-jobs {
+  margin-top: 132px; }
+  .section-jobs-specializes {
+    min-height: 221px;
+    width: 930px; }
+    .section-jobs-specializes-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .section-jobs-specializes-header h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px; }
+      .section-jobs-specializes-header button {
+        color: #2BBB97;
+        border: 1px solid #2BBB97;
+        border-radius: 2px;
+        background: transparent;
+        width: 135px;
+        height: 36px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        cursor: pointer; }
+        .section-jobs-specializes-header button:hover {
+          background: #2BBB97;
+          color: white; }
+    .section-jobs-specializes-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .section-jobs-specializes-block:last-child {
+        margin-right: 52px; }
+      .section-jobs-specializes-block a {
+        display: block;
+        text-decoration: none;
+        color: black; }
+        .section-jobs-specializes-block a:hover {
+          text-decoration: underline;
+          color: #2BBB97; }
+          .section-jobs-specializes-block a:hover .section-jobs-specializes-block-counter {
+            text-decoration: underline;
+            color: #2BBB97; }
+      .section-jobs-specializes-block p {
+        display: inline-block;
+        margin: 0 0 37px 0;
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 25px; }
+      .section-jobs-specializes-block-letter {
+        color: #25AEF6; }
+      .section-jobs-specializes-block-counter {
+        color: #AFB9DD; }
+
+.section-services-header {
+  display: flex;
+  justify-content: space-between; }
+
+@media (max-width: 1420px) {
   .section-inner {
     max-width: 1200px; }
   .section-promo-info {
@@ -588,25 +714,14 @@ body {
     .section-promo-media-map {
       width: 550px; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
   .section-inner {
     max-width: 970px; }
   .section-promo-info {
+    padding-left: 50px;
     width: 500px; }
-    .section-promo-info-logo {
-      margin-left: 50px; }
-    .section-promo-info-name {
-      margin-left: 50px; }
-      .section-promo-info-name-text {
-        margin-left: 0; }
-    .section-promo-info-location {
-      margin-left: 50px; }
-    .section-promo-info-phone {
-      margin-left: 50px; }
-    .section-promo-info-site {
-      margin-left: 50px; }
-    .section-promo-info-callme {
-      margin-left: 50px; }
+    .section-promo-info-name-text {
+      margin-left: 0; }
   .section-promo-media {
     width: 470px; }
     .section-promo-media-photos {
@@ -641,6 +756,7 @@ body {
     display: flex;
     flex-direction: column; }
   .section-promo-info {
+    padding-left: 0;
     width: 100%; }
     .section-promo-info-logo {
       margin: auto; }
@@ -675,7 +791,27 @@ body {
         width: 100%; }
     .section-promo-media-map {
       background-size: cover;
-      width: 100%; } }
+      width: 100%; }
+  .section-about {
+    margin-top: 60px; }
+    .section-about .section-inner {
+      display: flex;
+      flex-direction: column; }
+    .section-about-text {
+      width: 100%;
+      min-height: 404px;
+      margin-bottom: 60px; }
+    .section-about-schedule {
+      margin: auto;
+      width: 600px;
+      min-height: 404px; }
+  .section-jobs-specializes {
+    width: 650px;
+    margin: auto; }
+    .section-jobs-specializes-block {
+      margin-top: 50px; }
+      .section-jobs-specializes-block:last-child {
+        margin-right: 0; } }
 
 @media (max-width: 767px) {
   .section-inner {
@@ -748,7 +884,38 @@ body {
     .section-promo-info-callme {
       margin: auto; }
       .section-promo-info-callme button {
-        margin-left: 185px; } }
+        margin-left: 185px; }
+  .section-about {
+    margin-top: 60px; }
+    .section-about .section-inner {
+      display: flex;
+      flex-direction: column; }
+    .section-about-text {
+      width: 100%;
+      min-height: 404px;
+      margin-bottom: 40px; }
+      .section-about-text h3 {
+        text-align: center; }
+    .section-about-schedule {
+      margin: auto;
+      width: 400px;
+      min-height: 404px; }
+      .section-about-schedule h3 {
+        text-align: center; }
+  .section-jobs-specializes {
+    width: 450px;
+    margin: auto; }
+    .section-jobs-specializes-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .section-jobs-specializes-block-inner {
+        margin-bottom: 35px; }
+        .section-jobs-specializes-block-inner-item p {
+          margin-left: 140px; }
+      .section-jobs-specializes-block:last-child {
+        margin-right: 52px; } }
 
 @media (max-width: 565px) {
   .section-inner {
@@ -767,6 +934,8 @@ body {
       margin: auto; }
       .section-promo-info-location p {
         margin-left: 40px; }
+        .section-promo-info-location p br {
+          display: none; }
     .section-promo-info-phone {
       margin: auto; }
       .section-promo-info-phone a {
