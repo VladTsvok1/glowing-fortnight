@@ -263,6 +263,8 @@ body{
             margin-left: 91px;
             padding-top: 23px;
             a{
+                display: block;
+                width: 250px;
                 text-decoration: none;
             }
             p{
@@ -280,10 +282,13 @@ body{
             margin-left: 91px;
             padding-top: 23px;
             a{
+                display: block;
+                width: 10px;
                 text-decoration: none;
                 text-transform: none;
             }
             p{
+               
                 margin: 0;
                 padding-left: 33px;
                 font-weight: 450;
@@ -512,9 +517,15 @@ body{
                 }
                 &-phone{
                     margin: auto;
-                    p{
+                    a{
+                        display: block;
+                        width: 250px;
                         margin-left: 250px;
                     }
+                    p{
+                       
+                    }
+
                 }
                 &-site{
                     margin: auto;
@@ -576,7 +587,7 @@ body{
                 }
                 &-phone{
                     margin: auto;
-                    p{
+                    a{
                         margin-left: 210px;
                     }
                 }
@@ -657,7 +668,7 @@ body{
             }
             &-phone{
                 margin: auto;
-                p{
+                a{
                     margin-left: 160px;
                 }
             }
@@ -709,7 +720,7 @@ body{
             }
             &-phone{
                 margin: auto;
-                p{
+                a{
                     margin-left: 100px;
                 }
             }
