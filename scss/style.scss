@@ -38,8 +38,20 @@ body{
     font-family: 'AvenirNextCyr', sans-serif;
 }
 
-.section-header{
+
+.hr-line-sub-header{
     border-bottom: 1px solid #C0D3FE;
+}
+.section-inner{
+    
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+}
+
+.section-header{
+    max-width: $maxWidth;
+    margin: auto auto;
+    
     &-logo{
         margin-top: 15px;
         width: 155px;
@@ -47,6 +59,7 @@ body{
         background: url("../img/images/Logo_color\ 1logo.png") no-repeat;
         background-size: cover;
     }
+  
     &-search{
         margin-top: 14px;
         display: flex;
@@ -132,8 +145,6 @@ body{
     }
     .section-inner{
         height: 81px;
-        width: $maxWidth;
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         
@@ -145,9 +156,10 @@ body{
         height: 81px;
         width: $maxWidthContainer;
         margin: auto;
-        
+        .section-nav{
         &-list{
-           
+            
+           padding: 0;
             list-style: none;
            &-item{
             display: inline-block;
@@ -157,11 +169,7 @@ body{
             background-position-x: right;
             background-position-y: center;
             
-            &:last-child{
-                background: none;
-                padding: 0;
-            }
-            
+           
            
             a{
                 text-decoration: none;
@@ -173,31 +181,142 @@ body{
                     text-decoration: underline;
                     
                 }
+               
 
-
-
+            } 
+            &:last-child{
+                background: none;
+                padding: 0;
+                a{
+                color: #A7C0E2;
+                }
             }
+            
+            
             }
+           
            }
         }
     }
-    
+}
+
+
+.section-promo{
+    &-info{
+        width: 721px;
+        height: 600px;
+        background: linear-gradient(135.38deg, #2BBB97 45.98%, #25AEF6 91.19%);
+        border-radius: 4px 0px 0px 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==================media==============================
+    @media (max-width: 1410px){
+        .section-inner{
+            max-width: 1200px;
+        }
+        
+    }
 
     @media (max-width: 1200px){
         .section-inner{
             max-width: 970px;
         }
+        
     }
-    @media (max-width: 992px){
+    @media (max-width: 998px){
         .section-inner{
+
             max-width: 750px;
+
+        }
+        .section-header{
+            .section-inner{
+                height: 250px;
+               max-width: $maxWidth;
+                margin: 0 auto;
+                display: unset;
+            }
+            &-logo{
+                float: left;
+                margin: 30px ;
+                padding: 0;
+            }
+            &-search{   
+                float: right;
+                margin: 30px ;
+                padding: 0;
+            }
+            &-menu{
+                width: 90%;
+                clear: both;
+                margin: 20px auto;
+                padding: 0;
+            }
+           
+            
+
         }
     }
     @media (max-width: 767px){
         .section-inner{
-            max-width: none;
+            
+            max-width: 660px;
+         
         }
     }
+    @media (max-width: 677px){
+        .section-inner{
+            max-width: 550px;
+        }
+        
+        
+        .section-header{
+            .section-inner{
+              
+                display: block;
+                
+            }
+             
+        &-logo{
+            float: none;
+            margin: 20px auto;
+            padding: 0;
+
+        }
+        &-search{   
+            float: none;
+ 
+            margin: 30px auto;
+            padding: 0;
+            clear: both;
+        }
+        &-menu{
+            float: none;
+            width: 90%;
+            clear: both;
+            margin: 50px auto;
+            padding: 0;
+            
+        }
+        }
+    }
+    
+    
 
 .section-promo{
 
