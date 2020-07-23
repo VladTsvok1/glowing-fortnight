@@ -433,19 +433,184 @@ body {
         .section-small-nav .section-inner .section-nav-list-item:last-child a {
           color: #A7C0E2; }
 
+.section-promo .section-inner {
+  display: flex;
+  flex-direction: row; }
+
 .section-promo-info {
   width: 721px;
   height: 600px;
   background: linear-gradient(135.38deg, #2BBB97 45.98%, #25AEF6 91.19%);
   border-radius: 4px 0px 0px 4px; }
+  .section-promo-info-logo {
+    width: 91px;
+    height: 91px;
+    background: url(../img/images/parents-logo-background.jpg) no-repeat;
+    background-position: bottom;
+    margin-left: 91px;
+    padding-top: 66px; }
+  .section-promo-info-name-text {
+    margin-left: 91px;
+    padding-top: 16px; }
+    .section-promo-info-name-text-main {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0; }
+    .section-promo-info-name-text-sub {
+      font-weight: 450;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      padding: 0; }
+  .section-promo-info-location {
+    margin-left: 91px;
+    padding-top: 42px; }
+    .section-promo-info-location a {
+      text-decoration: none; }
+    .section-promo-info-location p {
+      margin: 0;
+      padding-left: 34px;
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF;
+      background: url(../img/icons/location-icon.svg) no-repeat;
+      background-position-y: 3px; }
+  .section-promo-info-phone {
+    margin-left: 91px;
+    padding-top: 23px; }
+    .section-promo-info-phone a {
+      text-decoration: none; }
+    .section-promo-info-phone p {
+      margin: 0;
+      padding-left: 34px;
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF;
+      background: url(../img/icons/Vectorphone-icon.svg) no-repeat; }
+  .section-promo-info-site {
+    margin-left: 91px;
+    padding-top: 23px; }
+    .section-promo-info-site a {
+      text-decoration: none;
+      text-transform: none; }
+    .section-promo-info-site p {
+      margin: 0;
+      padding-left: 33px;
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF;
+      background: url(../img/icons/Vectorweb-icon.svg) no-repeat; }
+  .section-promo-info-callme {
+    margin-left: 91px;
+    padding-top: 42px; }
+    .section-promo-info-callme button {
+      border: 2px solid #FFFFFF;
+      border-radius: 2px;
+      background: transparent;
+      width: 199px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      cursor: pointer; }
+
+.section-promo .section-promo-info-name-text-wraper {
+  display: flex; }
+  .section-promo .section-promo-info-name-text-wraper .section-promo-info-name-text-icon {
+    width: 73px;
+    height: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    margin: 8px 0 0 22px;
+    background: url(../img/icons/star-one-icon.png) no-repeat;
+    background-position-y: 5px;
+    background-position-x: 7px; }
+    .section-promo .section-promo-info-name-text-wraper .section-promo-info-name-text-icon span {
+      display: block;
+      font-weight: 750;
+      font-size: 20px;
+      line-height: 25px;
+      color: white;
+      margin-left: 34px;
+      padding-top: 3px; }
+
+.section-promo-media-photos-bg {
+  background: rgba(58, 89, 120, 0.8);
+  width: 690px;
+  height: 300px; }
+  .section-promo-media-photos-bg p {
+    margin: 0 0 0 55px;
+    padding-top: 220px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF; }
+
+.section-promo-media-photos {
+  background: url(../img/images/photo-top.png) no-repeat;
+  width: 690px;
+  height: 300px; }
+  .section-promo-media-photos p {
+    background: url(../img/icons/images-icon.svg) no-repeat;
+    background-position-y: 225px;
+    padding-left: 37px; }
+
+.section-promo-media-map {
+  background: url(../img/images/photo-bot.png) no-repeat; }
+  .section-promo-media-map p {
+    background: url(../img/icons/map-icon.png) no-repeat;
+    background-position-y: 225px;
+    padding-left: 37px; }
 
 @media (max-width: 1410px) {
   .section-inner {
-    max-width: 1200px; } }
+    max-width: 1200px; }
+  .section-promo-info {
+    width: 640px; }
+  .section-promo-media {
+    width: 550px; }
+    .section-promo-media-photos {
+      width: 550px; }
+      .section-promo-media-photos-bg {
+        width: 550px; }
+    .section-promo-media-map {
+      width: 550px; } }
 
 @media (max-width: 1200px) {
   .section-inner {
-    max-width: 970px; } }
+    max-width: 970px; }
+  .section-promo-info {
+    width: 500px; }
+    .section-promo-info-logo {
+      margin-left: 50px; }
+    .section-promo-info-name {
+      margin-left: 50px; }
+      .section-promo-info-name-text {
+        margin-left: 0; }
+    .section-promo-info-location {
+      margin-left: 50px; }
+    .section-promo-info-phone {
+      margin-left: 50px; }
+    .section-promo-info-site {
+      margin-left: 50px; }
+    .section-promo-info-callme {
+      margin-left: 50px; }
+  .section-promo-media {
+    width: 470px; }
+    .section-promo-media-photos {
+      width: 470px; }
+      .section-promo-media-photos-bg {
+        width: 470px; }
+    .section-promo-media-map {
+      width: 470px; } }
 
 @media (max-width: 998px) {
   .section-inner {
@@ -467,11 +632,72 @@ body {
     width: 90%;
     clear: both;
     margin: 20px auto;
-    padding: 0; } }
+    padding: 0; }
+  .section-promo .section-inner {
+    display: flex;
+    flex-direction: column; }
+  .section-promo-info {
+    width: 100%; }
+    .section-promo-info-logo {
+      margin: auto; }
+    .section-promo-info-name {
+      margin: auto; }
+      .section-promo-info-name-text {
+        margin-left: 200px; }
+    .section-promo-info-location {
+      margin: auto; }
+      .section-promo-info-location p {
+        margin-left: 130px; }
+    .section-promo-info-phone {
+      margin: auto; }
+      .section-promo-info-phone p {
+        margin-left: 250px; }
+    .section-promo-info-site {
+      margin: auto; }
+      .section-promo-info-site p {
+        margin-left: 250px; }
+    .section-promo-info-callme {
+      margin: auto; }
+      .section-promo-info-callme button {
+        margin-left: 270px; }
+  .section-promo-media {
+    width: 100%; }
+    .section-promo-media-photos {
+      width: 100%;
+      background-size: cover; }
+      .section-promo-media-photos-bg {
+        width: 100%; }
+    .section-promo-media-map {
+      background-size: cover;
+      width: 100%; } }
 
 @media (max-width: 767px) {
   .section-inner {
-    max-width: 660px; } }
+    max-width: 660px; }
+  .section-promo-info {
+    width: 100%; }
+    .section-promo-info-logo {
+      margin: auto; }
+    .section-promo-info-name {
+      margin: auto; }
+      .section-promo-info-name-text {
+        margin-left: 160px; }
+    .section-promo-info-location {
+      margin: auto; }
+      .section-promo-info-location p {
+        margin-left: 100px; }
+    .section-promo-info-phone {
+      margin: auto; }
+      .section-promo-info-phone p {
+        margin-left: 210px; }
+    .section-promo-info-site {
+      margin: auto; }
+      .section-promo-info-site p {
+        margin-left: 210px; }
+    .section-promo-info-callme {
+      margin: auto; }
+      .section-promo-info-callme button {
+        margin-left: 230px; } }
 
 @media (max-width: 677px) {
   .section-inner {
@@ -492,4 +718,58 @@ body {
     width: 90%;
     clear: both;
     margin: 50px auto;
-    padding: 0; } }
+    padding: 0; }
+  .section-promo-info {
+    width: 100%; }
+    .section-promo-info-logo {
+      margin: auto; }
+    .section-promo-info-name {
+      margin: auto; }
+      .section-promo-info-name-text {
+        margin-left: 120px; }
+    .section-promo-info-location {
+      margin: auto; }
+      .section-promo-info-location p {
+        margin-left: 40px; }
+    .section-promo-info-phone {
+      margin: auto; }
+      .section-promo-info-phone p {
+        margin-left: 160px; }
+    .section-promo-info-site {
+      margin: auto; }
+      .section-promo-info-site p {
+        margin-left: 160px; }
+    .section-promo-info-callme {
+      margin: auto; }
+      .section-promo-info-callme button {
+        margin-left: 185px; } }
+
+@media (max-width: 565px) {
+  .section-inner {
+    max-width: 450px; }
+  .section-promo-info {
+    width: 100%; }
+    .section-promo-info-logo {
+      margin: auto; }
+    .section-promo-info-name {
+      margin: auto; }
+      .section-promo-info-name-text {
+        margin-left: 60px; }
+      .section-promo-info-name-text {
+        display: block; }
+    .section-promo-info-location {
+      margin: auto; }
+      .section-promo-info-location p {
+        margin-left: 40px; }
+    .section-promo-info-phone {
+      margin: auto; }
+      .section-promo-info-phone p {
+        margin-left: 100px; }
+    .section-promo-info-site {
+      margin: auto; }
+      .section-promo-info-site p {
+        margin-left: 100px; }
+    .section-promo-info-callme {
+      margin: auto; }
+      .section-promo-info-callme button {
+        margin-left: 125px; } }
