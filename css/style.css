@@ -484,6 +484,8 @@ body {
     margin-left: 91px;
     padding-top: 23px; }
     .section-promo-info-phone a {
+      display: block;
+      width: 250px;
       text-decoration: none; }
     .section-promo-info-phone p {
       margin: 0;
@@ -497,6 +499,8 @@ body {
     margin-left: 91px;
     padding-top: 23px; }
     .section-promo-info-site a {
+      display: block;
+      width: 10px;
       text-decoration: none;
       text-transform: none; }
     .section-promo-info-site p {
@@ -650,7 +654,9 @@ body {
         margin-left: 130px; }
     .section-promo-info-phone {
       margin: auto; }
-      .section-promo-info-phone p {
+      .section-promo-info-phone a {
+        display: block;
+        width: 250px;
         margin-left: 250px; }
     .section-promo-info-site {
       margin: auto; }
@@ -688,7 +694,7 @@ body {
         margin-left: 100px; }
     .section-promo-info-phone {
       margin: auto; }
-      .section-promo-info-phone p {
+      .section-promo-info-phone a {
         margin-left: 210px; }
     .section-promo-info-site {
       margin: auto; }
@@ -733,7 +739,7 @@ body {
         margin-left: 40px; }
     .section-promo-info-phone {
       margin: auto; }
-      .section-promo-info-phone p {
+      .section-promo-info-phone a {
         margin-left: 160px; }
     .section-promo-info-site {
       margin: auto; }
@@ -763,7 +769,7 @@ body {
         margin-left: 40px; }
     .section-promo-info-phone {
       margin: auto; }
-      .section-promo-info-phone p {
+      .section-promo-info-phone a {
         margin-left: 100px; }
     .section-promo-info-site {
       margin: auto; }
