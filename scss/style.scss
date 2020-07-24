@@ -646,6 +646,8 @@ outline: none;
             @include transparentButt
           }
     }
+
+   
     &-main-item1, &-main-item2, &-main-item3, &-main-item4{
 
        height: 305px;
@@ -814,9 +816,29 @@ outline: none;
         }
   
     }
+    &-main-item2{
+        &-block1{
+            &-photo{
+                &-main{
+                    &-status{
+                        p{
+                            color: #A7C0E2;;
+                        }
+                    }
+                }
+                &-status{
+                background: #A7C0E2;;
+                }
+                
+        
+            }
+        }
+    }
 
+  
 
 }
+
 .section-reviews-answers{
     position: absolute;
     top: 2580px;
@@ -832,7 +854,7 @@ outline: none;
     }
 }
 .section-doctors-main-item1:hover{
-            height: unset;
+        height: unset;
     .section-doctors-main-item1-block4{
       display: block;
   }
@@ -856,8 +878,187 @@ outline: none;
   }
 }
 
+
+.section-reviews{
+
+         &-main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        
+        &-item{
+            width: 451px;
+            &-header{
+                margin-bottom: 16px;
+                display: flex;
+                &-img{
+                    margin: 0 20px 0  0;
+                    width: 100px;
+                    height: 100px;
+                    background: url(../img/images/photo-doctor.svg) no-repeat;
+                    background-size: cover;
+                }
+                &-name{
+                    h5{
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #3B3B3B;
+                    }
+                    p{
+                        margin: 5px 0 0 0;
+                        font-weight: 750;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #2BBB97;
+                    }
+                    .change-rewiew3{
+                            color: #E85164;
+                        
+                    }
+                }
+            }
+            &-text{
+                padding: 31px 36px 30px 31px;
+                &-sup{
+                    margin: 0 0 0 4px;
+                    font-weight: 450;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #AFB9DD;
+                }
+                &-phrase{
+                    margin: 2px  0 0 0;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    &-show{
+        margin-top: 40px;
+        a{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: #25AEF6;
+        }
+    }
+}
+
+.section-news{
+    a{
+        text-decoration: none;
+    }
+    &-header{
+        margin: 91px 0  30px 0;
+        h3{
+            margin: 0;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    }
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        &-item1, &-item2, &-item3, &-item4{
+            width: 330px;
+            &-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                border-radius: 4px;
+            }
+            &-text{
+                
+                overflow: scroll;
+                p{
+                    height: 130px;
+                    margin: 0;
+                    margin-top: 20px ;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #16395B;
+                }
+            }
+            &-info{
+                display: flex;
+                justify-content: space-between;
+                &-time{
+                    p  {
+                        margin: 0;
+                        font-weight: 450;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #AFB9DD;                      
+                    }
+                }
+                &-interact{
+                    display: flex;
+                
+                    &-views{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #AFB9DD;
+                        padding: 0 34px 0 21px;
+                        margin: 0;
+                        background: url(../img/icons/views-icon.svg) no-repeat;
+                        background-position-y: 3px;
+                    }
+                    &-coments{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #AFB9DD;
+                        padding: 0 8px 0 20px;
+                        margin: 0;
+                        background: url(../img/icons/comments-icon.svg) no-repeat;
+                        background-position-y: 2px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &-show{
+        p{
+            margin: 41px 0 0 0;
+             a{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;          
+                color: #25AEF6;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 // ==================media==============================
-    @media (max-width: 1420px){
+   
+
+
+
+@media (max-width: 1420px){
         .section-inner{
             max-width: 1200px;
         }
@@ -888,7 +1089,91 @@ outline: none;
 
         }
     }
-}
+
+    .section-doctors{
+        .section-inner{
+            margin-top: 121px;
+        }
+        &-main{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            h3{
+                margin: 0 0 0 5px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            button{
+                @include transparentButt
+              }
+        }
+        &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+            width: 290px;
+            &-block1{
+                padding: 20px 20px 10px 20px;
+            }
+            &-block2{
+                padding: 10px 20px 10px 20px;
+            }
+            &-block3{
+                padding: 20px 20px 10px 20px;
+
+            }&-block4{
+                padding: 10px 15px 0 15px;
+            }
+        }
+    
+            .section-reviews-answers{
+                position: absolute;
+                top: 2620px;
+                z-index: 0;
+            }
+
+
+
+    }
+
+//================= reviews =============
+    .section-reviews{
+
+        &-main{
+             &-item{
+                 width: 400px;
+                &-header{
+                    margin: 0;
+                    justify-content: space-between;
+                    &-name{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+//================== news ===================
+
+    .section-news{
+        &-main{
+            &-item1, &-item2, &-item3, &-item4{
+                width: 280px;
+                &-img{
+                    img{
+                        width: 280px;
+                    }
+                }
+       
+            }
+        } 
+    }
+    }
 @media (max-width: 1220px){
         .section-inner{
             max-width: 970px;
@@ -924,10 +1209,120 @@ outline: none;
     
             }
         }
+
+
+        
+    .section-doctors{
+        height: 630px;
+        .section-inner{
+            margin-top: 121px;
+        }
+        &-main{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            h3{
+                margin: 0 0 0 5px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+            button{
+                @include transparentButt
+              }
+        }
+        &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+            height: 350px;
+            &-block1{
+                flex-direction: column;
+                margin: auto;
+                padding: 10px 5px 10px 5px;
+                &-photo{
+                    margin: auto;
+                    margin-bottom: 15px;
+                    }
+                
+                &-name{
+                    margin: auto;
+                    &-main{
+                       margin-left: 20px;
+                    }
+                    &-sub{
+                        font-weight: 450;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #16395B;
+                    }
+                }
+            }
+            &-block2{
+                padding: 10px 10px 10px 15px;
+            }
+            &-block3{
+                padding: 10px 5px 10px 5px;
+            }
+            &-block4{
+                padding: 10px 5px 10px 5px;
+            }
+        }
+    
+            .section-reviews-answers{
+                position: absolute;
+                top: 2770px;
+                z-index: 0;
+            }
+
+
+
+    }
+
+    .section-reviews{
+
+        &-main{
+             &-item{
+                 width: 320px;
+                 &-text{
+                     padding: 25px 0 10px 0;
+                 }
+                &-header{
+                    margin: 0;
+                    justify-content: space-between;
+                    &-name{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    .section-news{
+        &-main{
+            &-item1, &-item2, &-item3, &-item4{
+                width: 240px;
+                &-img{
+
+                    img{
+                        width: 100%;
+                    }
+                }
+       
+            }
+        } 
+    }
 }
         
     
-    @media (max-width: 998px){
+@media (max-width: 998px){
         .section-inner{
 
             max-width: 750px;
@@ -1079,6 +1474,108 @@ outline: none;
             }
         }
 
+        
+           
+
+
+    .section-doctors{
+            height: unset;
+            .section-inner{
+                margin-top: 121px;
+            }
+            &-main{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+                height: 350px;
+                width: 330px;
+              margin-bottom: 200px;
+               
+    
+            }
+            .section-reviews-answers{
+                position: absolute;
+                top: 4680px;
+                z-index: 0;
+            }
+        }
+        
+    .section-doctors-main-item1:hover{
+            height: unset;
+            margin-bottom: 10px;
+        .section-doctors-main-item1-block4{
+          display: block;
+      }
+    }
+    .section-doctors-main-item2:hover{
+        height: unset;
+        margin-bottom: 10px;
+        .section-doctors-main-item2-block4{
+          display: block;
+      }
+    }
+    .section-doctors-main-item3:hover{
+        height: unset;
+        margin-bottom: 10px;
+        .section-doctors-main-item3-block4{
+          display: block;
+      }
+    }
+    .section-doctors-main-item4:hover{
+        height: unset;
+        margin-bottom: 10px;
+        .section-doctors-main-item4-block4{
+          display: block;
+      }
+    }
+
+
+
+
+    .section-reviews{
+
+        &-main{
+            flex-direction: column;;
+             &-item{
+                 margin: auto;
+                 margin-top: 45px;
+                 width: 451px;
+                 &-text{
+                    padding: 31px 36px 30px 31px;
+                 }
+                &-header{
+                    margin: 0;
+                    justify-content: space-between;
+                    &-name{
+                        width: 320px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .section-news{
+        &-main{
+            flex-direction: column;
+            &-item1, &-item2, &-item3, &-item4{
+                width: 330px;
+                margin: auto;
+                margin-bottom: 25px;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+       
+            }
+        } 
+    }
+
+
+
 
 }
 
@@ -1143,6 +1640,21 @@ outline: none;
                 }
     
             }
+        }
+
+        &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+            height: 350px;
+            width: 280px;
+          margin-bottom: 200px;
+           
+    
+            .section-reviews-answers{
+                position: absolute;
+                top: 4680px;
+                z-index: 0;
+            }
+
+
         }
 }
 
@@ -1293,6 +1805,67 @@ outline: none;
 
     }
 }
+
+.section-doctors{
+    height: unset;
+    .section-inner{
+        margin-top: 121px;
+    }
+    &-main{
+        margin-top: 15px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+        height: 350px;
+        width: 330px;
+        margin: 0 auto;
+        margin-bottom: 190px;
+       
+
+    }
+    .section-reviews-answers{
+        position: absolute;
+        top: 6480px;
+        z-index: 0;
+        margin: 0 0 0 210px
+    }
+   
+}
+
+ 
+
+
+            .section-doctors-main-item1:hover{
+                height: unset;
+                margin-bottom: 13px;
+            .section-doctors-main-item1-block4{
+            display: block;
+        }
+        }
+        .section-doctors-main-item2:hover{
+            height: unset;
+            margin-bottom: 13px;
+            .section-doctors-main-item2-block4{
+            display: block;
+        }
+        }
+        .section-doctors-main-item3:hover{
+            height: unset;
+            margin-bottom: 13px;
+            .section-doctors-main-item3-block4{
+            display: block;
+        }
+        }
+        .section-doctors-main-item4:hover{
+            height: unset;
+            margin-bottom: 13px;
+            .section-doctors-main-item4-block4{
+            display: block;
+        }
+        }
+
 }
 @media (max-width: 565px){
     .section-inner{
@@ -1358,5 +1931,16 @@ outline: none;
     
         }
     }
+
+
+    .section-doctors {
+        .section-reviews-answers {
+        position: absolute;
+        top: 6940px;
+        z-index: 0;
+        margin: 0 0 0 150px;
+            }
+        }
+
 
 }
