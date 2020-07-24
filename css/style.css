@@ -917,9 +917,13 @@ button:focus {
       .section-doctors-main-item-block4 button:hover {
         background: rgba(30, 206, 86, 0.7); }
 
-.change-under-hover-item {
+.section-reviews {
   position: relative;
-  bottom: 50px; }
+  bottom: 167px; }
+
+.section-doctors-main-item:hover {
+  height: unset;
+  z-index: 1; }
 
 @media (max-width: 1420px) {
   .section-inner {

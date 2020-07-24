@@ -804,11 +804,14 @@ outline: none;
 
 }
 
-.change-under-hover-item{
+.section-reviews{
     position: relative;
-    bottom: 50px;
+    bottom: 167px;
 }
-
+.section-doctors-main-item:hover{
+    height: unset;
+    z-index: 1;
+}
 
 
 // ==================media==============================
