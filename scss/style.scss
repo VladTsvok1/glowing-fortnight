@@ -622,28 +622,42 @@ outline: none;
 
 
 .section-doctors{
+    height: 532px;
     .section-inner{
         margin-top: 121px;
+      
+    }
+    &-main{
+        display: flex;
+        justify-content: space-between;
     }
     &-header{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         h3{
-            margin: 0;
+            margin: 0 0 0 5px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
         }
         button{
             @include transparentButt
           }
     }
-    &-main-item{
+    &-main-item1, &-main-item2, &-main-item3, &-main-item4{
+
+       height: 305px;
+        z-index: 4;
+        position: relative;
+        margin-top: 15px;
         background: #FFFFFF;
         width: 330px;
-        height: 305px;
         overflow: hidden;
         border: 1px solid #D2E1F5;
         box-sizing: border-box;
         border-radius: 8px;
-
         &-block1{
             padding: 30px 30px 15px 30px;
             border-bottom: 1px solid #D2E1F5;
@@ -771,7 +785,7 @@ outline: none;
         }
 
         &-block4{
-            margin-top: 20px;
+            display: none;
             padding: 0 30px 0 30px;
             &-sup{
                 margin: 0 0 3px 0;
@@ -798,21 +812,49 @@ outline: none;
                 
             }
         }
-        
+  
     }
 
 
 }
+.section-reviews-answers{
+    position: absolute;
+    top: 2580px;
+    z-index: 0;
+    h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
 
-.section-reviews{
-    position: relative;
-    bottom: 167px;
+        color: #000000;
+        margin: 0;
+       
+    }
 }
-.section-doctors-main-item:hover{
+.section-doctors-main-item1:hover{
+            height: unset;
+    .section-doctors-main-item1-block4{
+      display: block;
+  }
+}
+.section-doctors-main-item2:hover{
     height: unset;
-    z-index: 1;
+    .section-doctors-main-item2-block4{
+      display: block;
+  }
 }
-
+.section-doctors-main-item3:hover{
+    height: unset;
+    .section-doctors-main-item3-block4{
+      display: block;
+  }
+}
+.section-doctors-main-item4:hover{
+    height: unset;
+    .section-doctors-main-item4-block4{
+      display: block;
+  }
+}
 
 // ==================media==============================
     @media (max-width: 1420px){
