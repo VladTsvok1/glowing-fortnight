@@ -855,24 +855,28 @@ outline: none;
 }
 .section-doctors-main-item1:hover{
         height: unset;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
     .section-doctors-main-item1-block4{
       display: block;
   }
 }
 .section-doctors-main-item2:hover{
     height: unset;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
     .section-doctors-main-item2-block4{
       display: block;
   }
 }
 .section-doctors-main-item3:hover{
     height: unset;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
     .section-doctors-main-item3-block4{
       display: block;
   }
 }
 .section-doctors-main-item4:hover{
     height: unset;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
     .section-doctors-main-item4-block4{
       display: block;
   }
@@ -978,7 +982,7 @@ outline: none;
             }
             &-text{
                 
-                overflow: scroll;
+               
                 p{
                     height: 130px;
                     margin: 0;
@@ -1038,12 +1042,286 @@ outline: none;
                 font-size: 20px;
                 line-height: 25px;          
                 color: #25AEF6;
+                text-decoration: underline;
             }
         }
     }
 }
 
+.section-footer{
+    &-outer-top{
+        margin-top: 90px;
+        width: 100%;
+        height: 170px;
+        background: linear-gradient(175.17deg, #2BBB97 39.05%, #25AEF6 70.06%) no-repeat;
+        background-size: 100% 100px;
+        background-position-y: 70px;
+        &-wraper{
+            display: flex;
+            justify-content: space-between;
+            height: 170px;
+        }
+        &-phones{
+            display: flex;
+            &-1{
+                width: 215px;
+                height: 170px;
+                background: url(../img/images/phone-img-1-final.png) no-repeat;
+            }
+            &-2{
+                margin-bottom: 50px;
+                width: 154px;
+                height: 175px;
+                background: url(../img/images/phone-img-2-final.png) no-repeat;
+            }
+        }
+        &-text{
+            margin-bottom: 34px;
+            align-self: flex-end;
+            p{
+                margin: 0 ;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+        }
+        &-stores{
+            margin-bottom: 25px; 
+            display: flex;
+            align-self: flex-end;
+            &-1{
+                height: 50px;
+                width: 150px;
+                background: url(../img/images/apple-img.png);
+                
+                margin-right: 10px;
 
+            }
+            &-2{
+                height: 50px;
+                width: 160px;
+                background: url(../img/images/google-img.png);
+            }
+        }
+
+
+    }
+
+    &-outer-bot{
+        height: 512px;
+        background: #E5EEFF;
+        &-main{
+            
+            display: flex;
+            justify-content: space-between;
+            &-block1, &-block2, &-block3, &-block4{
+                 margin-top: 61px;
+            }
+
+            &-block1{
+                width: 330px;
+                h5{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin: 0 0 31px 0;
+                }
+                &-text{
+                    margin: 0 0 24px 0;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #3B3B3B;
+                }
+                &-mail{
+                    a{
+                        text-decoration: none;
+                        color: #16395B;
+                    }
+                    margin: 0 0 19px 0;
+                    padding: 0 0 0 25px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;                   
+                    background: url(../img/icons/footer-mail-icon.svg) no-repeat;
+                    background-position-y: 3px;
+                }
+                &-phone{
+                    a{
+                        text-decoration: none;
+                        color: #16395B;
+                    }
+                    margin: 0;
+                    padding: 0 0 0 25px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    background: url(../img/icons/footer-phone-icon.png) no-repeat;
+                    background-position-y: 3px;
+                }
+            }
+            &-block2{
+                h5{
+                    margin: 0 0 31px 0;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        margin: 18px 0 0 16px;
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #16395B;
+                        list-style: none;
+                        &::before {
+                            content: "\2022"; 
+                            color: #A7C0E2;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em; 
+                          }
+                          &:hover::before {
+                            content: "\2022"; 
+                            color: #2BBB97;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em; 
+                          }
+                          &:hover{
+                            color: #2BBB97;
+                            text-decoration: underline;
+                          }
+
+                        a{
+                            text-decoration: none;
+                            color: inherit;
+                        }
+                    }
+                }
+
+
+            }
+            &-block3{
+                h5{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin: 0 0 31px 0;
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        margin: 18px 0 0 16px;
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #16395B;
+                        list-style: none;
+                        &::before {
+                            content: "\2022"; 
+                            color: #A7C0E2;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em; 
+                          }
+                          &:hover::before {
+                            content: "\2022"; 
+                            color: #2BBB97;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em; 
+                          }
+                          &:hover{
+                            color: #2BBB97;
+                            text-decoration: underline;
+                          }
+
+                            a{
+                                text-decoration: none;
+                            color: inherit;
+                            }
+                        }
+
+                    }
+                }   
+            
+            &-block4{
+                width: 330px;
+
+                h5{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin: 0 0 31px 0;
+                }
+                p{
+                    margin: 0;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #3B3B3B;
+                }
+
+                &-icons{
+                    margin-top: 24px;
+                    display: flex;
+                    &1{
+                        margin-right: 7px;
+                      width: 32px;  
+                      height: 32px;  
+                      background: url(../img/icons/footer-fb-icon.png) no-repeat;
+                    }
+                    &2{
+                    width: 32px;  
+                      height: 32px;  
+                      background: url(../img/icons/footer-inst-icon.png) no-repeat;
+                    }
+                }
+            }
+
+        }
+        
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+            min-height:88px;
+            margin: 62px 0 0 0;
+            border-top: 1px solid #AFB9DD;
+            &-logo{
+                margin: 29px 0 0 0;
+                width: 167px;
+                height: 30px;
+                background: url(../img/images/footer-logo-img.png) no-repeat;
+            }
+            &-visa{
+                margin: 29px 0 0 0;
+                width: 167px;
+                height: 30px;
+                background: url(../img/images/footer-visa-img.png) no-repeat;
+            }
+        }
+    }
+
+   
+
+}
 
 
 
@@ -1164,6 +1442,9 @@ outline: none;
         &-main{
             &-item1, &-item2, &-item3, &-item4{
                 width: 280px;
+                &-text{
+                    overflow: scroll;
+                }
                 &-img{
                     img{
                         width: 280px;
