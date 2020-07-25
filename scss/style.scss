@@ -583,7 +583,7 @@ outline: none;
 
 
 .section-promo-tel{
-    display: block ;
+    display: none;
     padding-top: 20px;
     position: absolute;
     top: 500px;
@@ -630,7 +630,9 @@ outline: none;
 }
 
 
-
+.section-promo-tel-display{
+    display: block;
+}
 
 
 

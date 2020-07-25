@@ -709,7 +709,7 @@ button:focus {
         margin: 0; }
 
 .section-promo-tel {
-  display: block;
+  display: none;
   padding-top: 20px;
   position: absolute;
   top: 500px;
@@ -744,6 +744,9 @@ button:focus {
       margin: 20px 0 0 0;
       padding: 0 35px 0 35px;
       cursor: pointer; }
+
+.section-promo-tel-display {
+  display: block; }
 
 .section-jobs {
   margin-top: 132px; }
