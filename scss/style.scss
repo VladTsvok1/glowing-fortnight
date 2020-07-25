@@ -167,6 +167,100 @@ body{
     }
     
 }
+
+
+
+
+//================menu ===========
+
+.section-menu{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 763px;
+    left: 0;
+    background: #E5EEFF;
+        border: 1px solid #C0D3FE;
+        box-sizing: border-box;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        &-logo{
+            margin-top: 9px;
+            width: 100px;
+            height: 100px;
+            background: url(../img/images/logo-menu-img.png);
+        }
+        &-items{
+            ul{
+                margin: 0;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 46px;
+                    height: 80px;
+                    a{
+                        display: block;
+                        margin: 28px 0 0 0;
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 450;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #3B3B3B;
+                        
+                        &:hover{
+                            color:  #2BBB97;
+                            padding-bottom: 23px;
+                            border-bottom: 2px solid #2BBB97;
+                            border-radius: 2px 2px 0px 0px;
+                           
+                        }
+
+                    }
+                }
+            }
+        }
+        &-callme{
+            display: flex;
+            padding: 23px 0 23px 0;
+            p{  
+                padding-left: 28px;
+                margin: 10px 28px 0 0;
+                font-weight: 450;
+                font-size: 16px;
+                line-height: 20px;
+                color: #16395B;
+                background: url(../img/images/menu-phone-icon.svg) no-repeat;
+            }
+            button{
+                width: 154px;
+                height: 36px;
+                @include custom-green-button;
+            }
+        }
+    }
+}
+.section-menu-display-js{
+    display: block;
+}
+
+
+
+
+
+
+
+//================ nav ===========
+
+
+
+
+
+
+
 .section-small-nav{
     padding-top: 15px;;
     .section-inner{
@@ -277,22 +371,22 @@ body{
             }
         }
         &-phone{
-
+            
             padding-top: 23px;
             a{
+                cursor: pointer;
                 display: block;
-                width: 250px;
+                width: 255px;
                 text-decoration: none;
             }
             p{
                 margin: 0;
-                padding-left: 34px;
+                padding-left: 30px;
                 font-weight: 450;
                 font-size: 20px;
                 line-height: 25px;
                 color: #FFFFFF;
-                background: url(../img/icons/Vectorphone-icon.svg) no-repeat;
-                
+                background: url(../img/icons/bg-phone-icons.png)no-repeat; 
             }
         }
         &-site{
@@ -398,6 +492,7 @@ body{
 }
 
 
+
 // ==================== about==================
 
 
@@ -479,6 +574,71 @@ outline: none;
         }
     }
 }
+
+
+
+
+// =========== tel-block==================
+
+
+
+.section-promo-tel{
+    display: block ;
+    padding-top: 20px;
+    position: absolute;
+    top: 500px;
+    left: 260px;
+    width: 241px;
+    height: 215px;
+    background: #FFFFFF;
+    border: 1px solid #C0D3FE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+
+
+    &-block1{
+        padding: 0  0 19px 32px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #C0D3FE;
+        p{
+            margin: 0;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+        .close-button{
+            margin: 3px 33px 0 0;
+            width: 10px;
+            height: 10px;
+            background: url(../img/icons/close-tel-icon.png);
+            cursor: pointer;
+        }
+
+    }
+    &-block2{
+        margin: 6px 0 0 0;
+        p{
+            margin: 20px 0 0 0;
+            padding: 0 35px 0 35px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// =========== jobs==================
+
+
 
 
 .section-jobs{
@@ -1331,8 +1491,17 @@ outline: none;
 
 
 
+
+
+
 // ==================media==============================
    
+
+
+
+
+
+
 
 
 
@@ -1454,7 +1623,60 @@ outline: none;
             }
         } 
     }
+
+//======================footer======================
+.section-footer{
+    &-outer-top{
+       
+      
+       
+        
+        &-text{
+            margin-bottom: 15px;
+            align-self: flex-end;
+            text-align: center;
+        }
     }
+}
+
+
+
+
+
+//========================= menu ==================
+
+
+
+
+.section-menu{
+    &-list{
+        &-items{
+            ul{
+                padding-left: 20px;
+                margin: 0;
+                display: flex;
+                li{
+                    list-style: none;
+                    
+                    margin-right: 15px;
+                    height: 80px;
+                    
+                }
+            }
+        }
+        &-callme{
+            display: flex;
+            padding: 23px 0 23px 0;
+            p{  
+                padding-left: 28px;
+                margin: 10px 28px 0 0;         
+            }
+        }
+    }
+}
+
+
+}
 @media (max-width: 1220px){
         .section-inner{
             max-width: 970px;
@@ -1600,8 +1822,100 @@ outline: none;
             }
         } 
     }
-}
+
+
+
+
+    //=====================footer ====================
+
+
+    .section-footer{
+        &-outer-top{
+            margin-top: 90px;
+            width: 100%;
+            height: 170px;
+            background: linear-gradient(175.17deg, #2BBB97 39.05%, #25AEF6 70.06%) no-repeat;
+            background-size: 100% 130px;
+            background-position-y: 40px;
+
+            &-text{
+                    margin-bottom: 25px;
+            }
+            &-stores {
+                margin-bottom: 10px;
+                flex-direction: column;
+                &-1{
+                    margin-bottom: 10px;
+                }
+                }
+
+        }
         
+    }
+
+//======================== menu ===================
+.section-menu{
+    &-list{
+        height: 100px;
+        &-logo{
+            margin-top: 9px;
+            width: 100px;
+            height: 100px;
+            background: url(../img/images/logo-menu-img.png);
+        }
+        &-items{
+            ul{
+                li{
+                    margin-right: 15px;
+                    height: 100px;
+                    a{
+                        display: block;
+                        margin: 38px 0 0 0;
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 450;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #3B3B3B;
+                        
+                        &:hover{
+                            color:  #2BBB97;
+                            padding-bottom: 34px;
+                            border-bottom: 2px solid #2BBB97;
+                            border-radius: 2px 2px 0px 0px;
+                           
+                        }
+
+                    }
+                }
+            }
+        }
+        &-callme{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 0 0 0;
+            p{  
+                padding-left: 28px;
+                margin: 10px 28px 15px 0;
+                font-weight: 450;
+                font-size: 16px;
+                line-height: 20px;
+                color: #16395B;
+                background: url(../img/images/menu-phone-icon.svg) no-repeat;
+            }
+            button{
+                margin-left: 20px;
+                width: 154px;
+                height: 36px;
+                @include custom-green-button;
+            }
+        }
+    }
+}
+
+
+
+}       
     
 @media (max-width: 998px){
         .section-inner{
@@ -1666,7 +1980,7 @@ outline: none;
                     margin: auto;
                     a{
                         display: block;
-                        width: 250px;
+                        width: 255px;
                         margin-left: 250px;
                     }
 
@@ -1856,6 +2170,84 @@ outline: none;
     }
 
 
+//======================= footer ===================
+.section-footer{
+    .section-footer-outer-top{
+        &-text{
+            margin-bottom: 15px;
+        }
+    }
+    .section-footer-outer-bot {
+        height: 800px;
+        &-main{
+            &-block3{
+                width: 330px;
+            }
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+//==================== menu ================
+
+
+.section-menu{
+    top: 1448px;
+    &-list{
+        height: 140px;
+        &-logo{
+            margin: 20px 15px 0 0;
+        }
+        &-items{
+                 
+            ul{
+                flex-wrap: wrap;
+                height: 140px;
+                width: 420px;
+                padding: 0;
+                li{
+                    margin-right: 30px;
+                    height: 50px;
+                    a{
+                        display: block;
+                        margin: 20px 0 0 0;
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 450;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #3B3B3B;
+                        
+                        &:hover{
+                            color:  #2BBB97;
+                            padding-bottom: 24px;
+                            border-bottom: 2px solid #2BBB97;
+                            border-radius: 2px 2px 0px 0px;
+                           
+                        }
+
+                    }
+                }
+            }
+        }
+        &-callme{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 0 0 0;
+            p{  
+                padding-left: 28px;
+                margin: 30px 15px 15px 0;
+
+            }
+            button{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
 
 
 }
@@ -1937,6 +2329,116 @@ outline: none;
 
 
         }
+
+
+
+//================ footer ==================
+
+
+.section-footer{
+    
+    &-outer-top{
+        .section-footer-outer-top-wraper {
+            flex-wrap: wrap;
+        }
+        &-phones{
+            order: 1;
+        }
+        &-text{
+               display: none;
+        }
+        &-stores {
+            order: 2;
+            margin-bottom: 60px;
+            flex-direction: column;
+            align-self: flex-end;
+            &-1{
+                margin-bottom: 10px;
+            }
+            }
+
+    }
+    .section-footer-outer-bot {
+        height: 800px;
+        &-main{
+            &-block3{
+                width: 330px;
+            }
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+//================ menu ====================
+
+
+
+
+
+
+.section-menu{
+    top: 1448px;
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        height: 280px;
+        &-logo{
+            margin: 20px 15px 0 0;
+            width: 100px;
+            height: 100px;
+            background: url(../img/images/logo-menu-img.png);
+        }
+        &-items{
+            ul{
+                flex-direction: column;
+                height: 250px;
+                width: unset;
+                padding: 0;
+                li{
+                    margin-right: 0;
+                    height: 40px;
+                    a{
+                        text-align: center;
+                        display: block;
+                        margin: 25px 0 0 0;
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 450;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #3B3B3B;
+                        
+                        &:hover{
+                            color:  #2BBB97;
+                            padding-bottom: 4px;
+                            border-bottom: 2px solid #2BBB97;
+                            border-radius: 2px 2px 0px 0px;
+                           
+                        }
+
+                    }
+                }
+            }
+        }
+        &-callme{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 0 0 0;
+            p{  
+                padding-left: 28px;
+                margin: 30px 15px 15px 0;
+                font-weight: 450;
+                font-size: 16px;
+                line-height: 20px;
+                color: #16395B;
+                background: url(../img/images/menu-phone-icon.svg) no-repeat;
+            }
+ 
+        }
+    }
+}
+
 }
 
 
@@ -1945,7 +2447,8 @@ outline: none;
             max-width: 550px;
         }
         
-        // ======== media header =====
+        // ======== media header ========
+
     .section-header{
         .section-inner{
               
@@ -1975,10 +2478,13 @@ outline: none;
             
         }
     }
-      // ======== media header =====
+
+      // ======== media header =========
 
 
-      // ======== media promo =====
+      // ======== media promo =========
+
+
     .section-promo{
         &-info{
             width: 100%;
@@ -2019,7 +2525,7 @@ outline: none;
         }
     }
 
-      // ======== media promo =====
+      // ======== media promo ===========
 
 // ======================== about =============
 
@@ -2147,6 +2653,27 @@ outline: none;
         }
         }
 
+
+
+        //============== footer ============
+        .section-footer{
+        .section-footer-outer-bot {
+            height: 800px;
+            &-main{
+                &-block3, &-block4{
+                    width: 250px;
+                }
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+
+
+//================ menu =============
+
+
+   
 }
 @media (max-width: 565px){
     .section-inner{
@@ -2224,4 +2751,123 @@ outline: none;
         }
 
 
+
+
+
+
+        //=========FOOTER==============
+
+        .section-footer{
+            &-outer-top{
+                margin-top: 90px;
+                width: 100%;
+                height: 280px;
+                background: linear-gradient(175.17deg, #2BBB97 39.05%, #25AEF6 70.06%) no-repeat;
+                background-size: 100% 110px;
+                background-position-y: 170px;
+        
+               
+                 .section-footer-outer-top-wraper {
+                        flex-wrap: wrap;
+                    }
+                    &-phones{
+                        margin:  0 40px;
+                        order: 1;
+                    }
+                    &-text{
+                           display: none;
+                    }
+                    &-stores {
+                        margin:  0 auto;
+                        order: 2;
+                        margin-top: -25px;
+                        flex-direction: row;
+                        align-self: flex-start;
+                        &-1{
+                            margin: 0 50px 10px 20px;
+                        }
+                        }
+            
+                }
+            
+            .section-footer-outer-bot {
+                height: 1000px;
+                &-main{
+                    &-block4{
+                        width: 330px;
+                    }
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+
+
+        //============== menu ==============
+        .section-menu{
+            top: 1448px;
+            &-list{
+                display: flex;
+                justify-content: space-between;
+                height: 290px;
+                &-logo{
+                    margin: 20px 15px 0 0;
+                    width: 100px;
+                    height: 100px;
+                    background: url(../img/images/logo-menu-img.png);
+                }
+                &-items{
+                    ul{
+                        flex-direction: column;
+                        height: 250px;
+                        width: unset;
+                        padding: 0;
+                        li{
+                            margin-right: 0;
+                            height: 40px;
+                            a{
+                                text-align: center;
+                                display: block;
+                                margin: 25px 0 0 0;
+                                text-decoration: none;
+                                font-style: normal;
+                                font-weight: 450;
+                                font-size: 20px;
+                                line-height: 25px;
+                                color: #3B3B3B;
+                                
+                                &:hover{
+                                    color:  #2BBB97;
+                                    padding-bottom: 4px;
+                                    border-bottom: 2px solid #2BBB97;
+                                    border-radius: 2px 2px 0px 0px;
+                                   
+                                }
+        
+                            }
+                        }
+                    }
+                }
+                &-callme{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 7px 0 0 0;
+                    p{  
+                        padding-left: 28px;
+                        margin: 30px 0px 15px 0;
+                        font-weight: 450;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #16395B;
+                        background: url(../img/images/menu-phone-icon.svg) no-repeat;
+                    }
+                    button{
+                        margin-left: 20px;
+                        width: 154px;
+                        height: 36px;
+                        @include custom-green-button;
+                    }
+                }
+            }
+        }
 }
