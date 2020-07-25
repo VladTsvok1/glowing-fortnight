@@ -410,7 +410,7 @@ body {
     justify-content: space-between; }
 
 .section-menu {
-  display: block;
+  display: none;
   width: 100%;
   position: absolute;
   top: 763px;
@@ -554,17 +554,18 @@ body {
   .section-promo-info-phone {
     padding-top: 23px; }
     .section-promo-info-phone a {
+      cursor: pointer;
       display: block;
-      width: 250px;
+      width: 255px;
       text-decoration: none; }
     .section-promo-info-phone p {
       margin: 0;
-      padding-left: 34px;
+      padding-left: 30px;
       font-weight: 450;
       font-size: 20px;
       line-height: 25px;
       color: #FFFFFF;
-      background: url(../img/icons/Vectorphone-icon.svg) no-repeat; }
+      background: url(../img/icons/bg-phone-icons.png) no-repeat; }
   .section-promo-info-site {
     padding-top: 23px; }
     .section-promo-info-site a {
@@ -706,6 +707,43 @@ button:focus {
         color: #3B3B3B;
         padding: 12px 0 12px 0;
         margin: 0; }
+
+.section-promo-tel {
+  display: block;
+  padding-top: 20px;
+  position: absolute;
+  top: 500px;
+  left: 260px;
+  width: 241px;
+  height: 215px;
+  background: #FFFFFF;
+  border: 1px solid #C0D3FE;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px; }
+  .section-promo-tel-block1 {
+    padding: 0  0 19px 32px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C0D3FE; }
+    .section-promo-tel-block1 p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000; }
+    .section-promo-tel-block1 .close-button {
+      margin: 3px 33px 0 0;
+      width: 10px;
+      height: 10px;
+      background: url(../img/icons/close-tel-icon.png);
+      cursor: pointer; }
+  .section-promo-tel-block2 {
+    margin: 6px 0 0 0; }
+    .section-promo-tel-block2 p {
+      margin: 20px 0 0 0;
+      padding: 0 35px 0 35px;
+      cursor: pointer; }
 
 .section-jobs {
   margin-top: 132px; }
@@ -1437,7 +1475,21 @@ button:focus {
   .section-footer-outer-top-text {
     margin-bottom: 15px;
     align-self: flex-end;
-    text-align: center; } }
+    text-align: center; }
+  .section-menu-list-items ul {
+    padding-left: 20px;
+    margin: 0;
+    display: flex; }
+    .section-menu-list-items ul li {
+      list-style: none;
+      margin-right: 15px;
+      height: 80px; }
+  .section-menu-list-callme {
+    display: flex;
+    padding: 23px 0 23px 0; }
+    .section-menu-list-callme p {
+      padding-left: 28px;
+      margin: 10px 28px 0 0; } }
 
 @media (max-width: 1220px) {
   .section-inner {
@@ -1542,7 +1594,56 @@ button:focus {
       margin-bottom: 10px;
       flex-direction: column; }
       .section-footer-outer-top-stores-1 {
-        margin-bottom: 10px; } }
+        margin-bottom: 10px; }
+  .section-menu-list {
+    height: 100px; }
+    .section-menu-list-logo {
+      margin-top: 9px;
+      width: 100px;
+      height: 100px;
+      background: url(../img/images/logo-menu-img.png); }
+    .section-menu-list-items ul li {
+      margin-right: 15px;
+      height: 100px; }
+      .section-menu-list-items ul li a {
+        display: block;
+        margin: 38px 0 0 0;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 25px;
+        color: #3B3B3B; }
+        .section-menu-list-items ul li a:hover {
+          color: #2BBB97;
+          padding-bottom: 34px;
+          border-bottom: 2px solid #2BBB97;
+          border-radius: 2px 2px 0px 0px; }
+    .section-menu-list-callme {
+      display: flex;
+      flex-direction: column;
+      padding: 7px 0 0 0; }
+      .section-menu-list-callme p {
+        padding-left: 28px;
+        margin: 10px 28px 15px 0;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 20px;
+        color: #16395B;
+        background: url(../img/images/menu-phone-icon.svg) no-repeat; }
+      .section-menu-list-callme button {
+        margin-left: 20px;
+        width: 154px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        background-color: #32D29F;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer; }
+        .section-menu-list-callme button:hover {
+          background: rgba(30, 206, 86, 0.7); } }
 
 @media (max-width: 998px) {
   .section-inner {
@@ -1585,7 +1686,7 @@ button:focus {
       margin: auto; }
       .section-promo-info-phone a {
         display: block;
-        width: 250px;
+        width: 255px;
         margin-left: 250px; }
     .section-promo-info-site {
       margin: auto; }
@@ -1695,7 +1796,44 @@ button:focus {
     .section-footer .section-footer-outer-bot-main {
       flex-wrap: wrap; }
       .section-footer .section-footer-outer-bot-main-block3 {
-        width: 330px; } }
+        width: 330px; }
+  .section-menu {
+    top: 1448px; }
+    .section-menu-list {
+      height: 140px; }
+      .section-menu-list-logo {
+        margin: 20px 15px 0 0; }
+      .section-menu-list-items ul {
+        flex-wrap: wrap;
+        height: 140px;
+        width: 420px;
+        padding: 0; }
+        .section-menu-list-items ul li {
+          margin-right: 30px;
+          height: 50px; }
+          .section-menu-list-items ul li a {
+            display: block;
+            margin: 20px 0 0 0;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 25px;
+            color: #3B3B3B; }
+            .section-menu-list-items ul li a:hover {
+              color: #2BBB97;
+              padding-bottom: 24px;
+              border-bottom: 2px solid #2BBB97;
+              border-radius: 2px 2px 0px 0px; }
+      .section-menu-list-callme {
+        display: flex;
+        flex-direction: column;
+        padding: 7px 0 0 0; }
+        .section-menu-list-callme p {
+          padding-left: 28px;
+          margin: 30px 15px 15px 0; }
+        .section-menu-list-callme button {
+          margin-left: 20px; } }
 
 @media (max-width: 767px) {
   .section-inner {
@@ -1756,7 +1894,53 @@ button:focus {
     .section-footer .section-footer-outer-bot-main {
       flex-wrap: wrap; }
       .section-footer .section-footer-outer-bot-main-block3 {
-        width: 330px; } }
+        width: 330px; }
+  .section-menu {
+    top: 1448px; }
+    .section-menu-list {
+      display: flex;
+      justify-content: space-between;
+      height: 280px; }
+      .section-menu-list-logo {
+        margin: 20px 15px 0 0;
+        width: 100px;
+        height: 100px;
+        background: url(../img/images/logo-menu-img.png); }
+      .section-menu-list-items ul {
+        flex-direction: column;
+        height: 250px;
+        width: unset;
+        padding: 0; }
+        .section-menu-list-items ul li {
+          margin-right: 0;
+          height: 40px; }
+          .section-menu-list-items ul li a {
+            text-align: center;
+            display: block;
+            margin: 25px 0 0 0;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 25px;
+            color: #3B3B3B; }
+            .section-menu-list-items ul li a:hover {
+              color: #2BBB97;
+              padding-bottom: 4px;
+              border-bottom: 2px solid #2BBB97;
+              border-radius: 2px 2px 0px 0px; }
+      .section-menu-list-callme {
+        display: flex;
+        flex-direction: column;
+        padding: 7px 0 0 0; }
+        .section-menu-list-callme p {
+          padding-left: 28px;
+          margin: 30px 15px 15px 0;
+          font-weight: 450;
+          font-size: 16px;
+          line-height: 20px;
+          color: #16395B;
+          background: url(../img/images/menu-phone-icon.svg) no-repeat; } }
 
 @media (max-width: 677px) {
   .section-inner {
@@ -1955,4 +2139,63 @@ button:focus {
     .section-footer .section-footer-outer-bot-main {
       flex-wrap: wrap; }
       .section-footer .section-footer-outer-bot-main-block4 {
-        width: 330px; } }
+        width: 330px; }
+  .section-menu {
+    top: 1448px; }
+    .section-menu-list {
+      display: flex;
+      justify-content: space-between;
+      height: 290px; }
+      .section-menu-list-logo {
+        margin: 20px 15px 0 0;
+        width: 100px;
+        height: 100px;
+        background: url(../img/images/logo-menu-img.png); }
+      .section-menu-list-items ul {
+        flex-direction: column;
+        height: 250px;
+        width: unset;
+        padding: 0; }
+        .section-menu-list-items ul li {
+          margin-right: 0;
+          height: 40px; }
+          .section-menu-list-items ul li a {
+            text-align: center;
+            display: block;
+            margin: 25px 0 0 0;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 25px;
+            color: #3B3B3B; }
+            .section-menu-list-items ul li a:hover {
+              color: #2BBB97;
+              padding-bottom: 4px;
+              border-bottom: 2px solid #2BBB97;
+              border-radius: 2px 2px 0px 0px; }
+      .section-menu-list-callme {
+        display: flex;
+        flex-direction: column;
+        padding: 7px 0 0 0; }
+        .section-menu-list-callme p {
+          padding-left: 28px;
+          margin: 30px 0px 15px 0;
+          font-weight: 450;
+          font-size: 16px;
+          line-height: 20px;
+          color: #16395B;
+          background: url(../img/images/menu-phone-icon.svg) no-repeat; }
+        .section-menu-list-callme button {
+          margin-left: 20px;
+          width: 154px;
+          height: 36px;
+          font-size: 14px;
+          font-weight: 600;
+          color: white;
+          background-color: #32D29F;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer; }
+          .section-menu-list-callme button:hover {
+            background: rgba(30, 206, 86, 0.7); } }
