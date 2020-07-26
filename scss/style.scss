@@ -596,13 +596,14 @@ body{
 
 // ===================== map =================
 .section-map{
-  display: block;
+    display: none;
     position: relative;
     position: absolute;
     top: 0px;
     height: 1645px; 
     width: 100%; 
     background: rgba(22, 57, 91, 0.8);
+    
 .section-map-wraper{
     display: flex;
     overflow:hidden;
@@ -611,6 +612,7 @@ body{
     top: 213px;
     left: 346px;
 }
+
     iframe{
         width: 670px; 
         height: 800px
@@ -755,11 +757,27 @@ body{
         }
         }
     }
+
+
+    .close-map{
+    
+        position: absolute;
+        top: 120px;
+        right: 140px;
+        width: 19px;
+        height: 19px;
+        background: url(../img/icons/close-map-icon.png) no-repeat;
+        background-size: 100%;
+        opacity: 100%;
+        cursor: pointer;
+    
 }
 
 
-
-
+}
+.map-display-js{
+    display: block;
+}
 
 
 
@@ -984,7 +1002,31 @@ outline: none;
         }
     }
 }
+
+
+.slide-button-left{
+    opacity: 0.8;
+    z-index: 15;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/icons/slider-left-arrow-act-icon.png);
+}
+.slide-button-right{
+    opacity: 0.8;
+    z-index: 15;
+    position: absolute;
+    right:  0;
+    top: 150px;
+    background: url(../img/icons/slider-right-arrow-act-icon.png);
+    width: 60px;
+    height: 60px;
+}
 .section-services{
+    position: relative;
+
     .section-inner{
         margin-top: 84px;
     }
@@ -1064,6 +1106,7 @@ outline: none;
 
 
 .section-doctors{
+    position: relative;
     height: 532px;
     .section-inner{
         margin-top: 121px;
@@ -2004,6 +2047,34 @@ outline: none;
     } 
 }
 
+
+
+.section-map{
+
+      position: relative;
+      position: absolute;
+      top: 0px;
+      height: 1645px; 
+      width: 100%; 
+      background: rgba(22, 57, 91, 0.8);
+  .section-map-wraper{
+      display: flex;
+      overflow:hidden;
+      width: 1000px;
+      position: absolute;
+      top: 213px;
+      left: 196px;
+  }
+
+}
+
+.section-promo-tel{
+    padding-top: 20px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+
 }
 @media (max-width: 1220px){
         .section-inner{
@@ -2270,6 +2341,41 @@ outline: none;
     border: none;
     cursor: pointer;
 }
+
+
+
+
+.section-map{
+      position: relative;
+      position: absolute;
+      top: 0px;
+      height: 1645px; 
+      width: 100%; 
+      background: rgba(22, 57, 91, 0.8);
+  .section-map-wraper{
+      display: flex;
+      overflow:hidden;
+      width: 900px;
+      position: absolute;
+      top: 213px;
+      left: 66px;
+  }
+
+}
+
+
+.section-promo-tel{
+    padding-top: 20px;
+    position: absolute;
+    top: 530px;
+    left: 200px;
+}
+
+
+
+
+
+
 }       
     
 @media (max-width: 998px){
@@ -2632,6 +2738,47 @@ outline: none;
     border: none;
     cursor: pointer;
 }
+
+
+
+
+.section-map{
+
+      position: relative;
+      position: absolute;
+      top: 0px;
+      height: 1645px; 
+      width: 100%; 
+      background: rgba(22, 57, 91, 0.8);
+  .section-map-wraper{
+      display: flex;
+      overflow:hidden;
+      width: 720px;
+      position: absolute;
+      top: 213px;
+      left: 26px;
+  }
+
+}
+
+
+
+
+
+
+
+.section-promo-tel{
+    padding-top: 20px;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+
+
+
+
+
 }
 
 
@@ -2848,6 +2995,42 @@ outline: none;
     border: none;
     cursor: pointer;
 }
+
+
+
+.section-map{
+
+      position: relative;
+      position: absolute;
+      top: 0px;
+      height: 1645px; 
+      width: 100%; 
+      background: rgba(22, 57, 91, 0.8);
+  .section-map-wraper{
+      display: flex;
+      overflow:hidden;
+      width: 620px;
+      height: 600px;
+      position: absolute;
+      top: 213px;
+      left: 46px;
+  }
+
+}
+
+
+.section-promo-tel{
+    padding-top: 20px;
+    position: absolute;
+    top: 600px;
+    left: 300px;
+}
+
+
+
+
+
+
 
 }
 
@@ -3113,7 +3296,73 @@ outline: none;
     border: none;
     cursor: pointer;
 }
-   
+  
+
+
+.section-map{
+
+      position: relative;
+      position: absolute;
+      top: 0px;
+      height: 1645px; 
+      width: 100%; 
+      background: rgba(22, 57, 91, 0.8);
+  .section-map-wraper{
+      display: flex;
+      overflow:hidden;
+      width: 540px;
+      height: 600px;
+      position: absolute;
+      top: 213px;
+      left: 16px;
+  }
+    &-side{
+        &-header{
+            &-logo{
+                margin-left: 10px;
+            }
+        }
+
+        &-rate{
+            &-stars{
+                margin-left: 25px;
+            }
+        }
+        &-adress{
+            &-sup{
+                margin-left: 15px;
+            }
+            &-main{
+                margin-left: 15px;
+            }
+        }
+        &-hours{
+            h6{
+                margin-left: 10px;
+            }
+            &-item{
+                p{
+                    margin-left: 10px;
+                }
+                
+            }
+        }
+    }
+}
+
+
+.section-promo-tel{
+    padding-top: 20px;
+    position: absolute;
+    top: 700px;
+    left: 200px;
+}
+
+
+
+
+
+
 }
 @media (max-width: 565px){
     .section-inner{
@@ -3343,4 +3592,87 @@ outline: none;
             border: none;
             cursor: pointer;
         }
+
+
+
+        .section-map{
+      
+              position: relative;
+              position: absolute;
+              top: 0px;
+              height: 1645px; 
+              width: 100%; 
+              background: rgba(22, 57, 91, 0.8);
+          .section-map-wraper{
+              display: flex;
+              overflow:hidden;
+              width: 440px;
+              height: 550px;
+              position: absolute;
+              top: 213px;
+              left: 16px;
+          }
+
+          iframe{
+              width: 250px;
+          }
+            &-side{
+                width: 200px;
+                &-header{
+                    &-logo{
+                        margin-left: 10px;
+                    }
+                }
+        
+                &-rate{
+                    &-stars{
+                        margin-left: 5px;
+                    }
+                    &-docs{
+                        width: 45px;
+                        margin-left: 5px;
+                    }
+                    &-offers{
+                        width: 50px;
+                        margin-left: 5px;
+                        margin-right: 0;
+                    }
+                }
+                &-adress{
+                    &-sup{
+                        margin-left: 15px;
+                    }
+                    &-main{
+                        margin-left: 15px;
+                    }
+                }
+                &-hours{
+                    h6{
+                        margin-left: 10px;
+                    }
+                    &-item{
+                        p{
+                            margin-left: 10px;
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
