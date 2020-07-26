@@ -1284,7 +1284,7 @@ button:focus {
 
 .section-reviews-answers {
   position: absolute;
-  top: 2580px;
+  top: 480px;
   z-index: 0; }
   .section-reviews-answers h3 {
     font-weight: 600;
@@ -1716,7 +1716,7 @@ button:focus {
       padding: 10px 15px 0 15px; }
   .section-doctors .section-reviews-answers {
     position: absolute;
-    top: 2620px;
+    top: 420px;
     z-index: 0; }
   .section-reviews-main-item {
     width: 400px; }
@@ -1856,7 +1856,7 @@ button:focus {
         padding: 10px 5px 10px 5px; }
     .section-doctors .section-reviews-answers {
       position: absolute;
-      top: 2770px;
+      top: 540px;
       z-index: 0; }
   .section-reviews-main-item {
     width: 320px; }
@@ -2075,7 +2075,7 @@ button:focus {
       margin-bottom: 200px; }
     .section-doctors .section-reviews-answers {
       position: absolute;
-      top: 4680px;
+      top: 1120px;
       z-index: 0; }
   .section-doctors-main-item1:hover {
     height: unset;
@@ -2447,7 +2447,7 @@ button:focus {
       margin-bottom: 190px; }
     .section-doctors .section-reviews-answers {
       position: absolute;
-      top: 6480px;
+      top: 2120px;
       z-index: 0;
       margin: 0 0 0 210px; }
   .section-doctors-main-item1:hover {
@@ -2569,7 +2569,7 @@ button:focus {
       margin-top: 25px; }
   .section-doctors .section-reviews-answers {
     position: absolute;
-    top: 6940px;
+    top: 2140px;
     z-index: 0;
     margin: 0 0 0 150px; }
   .section-footer-outer-top {
