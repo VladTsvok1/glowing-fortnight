@@ -1031,7 +1031,8 @@ button:focus {
   top: 150px;
   width: 60px;
   height: 60px;
-  background: url(../img/icons/slider-left-arrow-act-icon.png); }
+  background: url(../img/icons/slider-left-arrow-act-icon.png);
+  cursor: pointer; }
 
 .slide-button-right {
   opacity: 0.8;
@@ -1041,7 +1042,8 @@ button:focus {
   top: 150px;
   background: url(../img/icons/slider-right-arrow-act-icon.png);
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  cursor: pointer; }
 
 .section-services {
   position: relative; }
